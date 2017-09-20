@@ -29,6 +29,10 @@ public class Problem1 extends Robot
         
         sortList();
         moveToPutBeeper();
+        while(rowNumber != 0){
+            putDownRow();
+            rowNumber--;
+        }
     }
     
     public void moveToStart() {
@@ -144,6 +148,13 @@ public class Problem1 extends Robot
     }
     
     public void moveToPutBeeper(){
+        faceWest();
+        while(frontIsClear()){
+            move();
+        }
+    }
+    
+    public void putDownRow() {
         
     }
    
