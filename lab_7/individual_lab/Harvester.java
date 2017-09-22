@@ -8,6 +8,7 @@ import kareltherobot.*;
 public class Harvester extends Robot
 {
     int[][]field = new int[6][5];
+    
     public Harvester(int st, int av, Direction dir, int numBeepers) {
         super(st, av, dir, numBeepers);
     }

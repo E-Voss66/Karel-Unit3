@@ -1,6 +1,8 @@
 #BlueJ class context
-comment0.params=
-comment0.target=void\ harvest()
+comment0.target=Harvester
+comment0.text=\r\n\ @author\ \:\ \ D.\ Appel\r\n
 comment1.params=
-comment1.target=void\ printField()
-numComments=2
+comment1.target=void\ harvest()
+comment2.params=
+comment2.target=void\ printField()
+numComments=3
