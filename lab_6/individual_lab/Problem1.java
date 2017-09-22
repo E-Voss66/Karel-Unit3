@@ -31,6 +31,7 @@ public class Problem1 extends Robot
         moveToPutBeeper();
         while(rowNumber != 0){
             putDownRow();
+            moveToNextRow2();
             rowNumber--;
         }
     }
@@ -118,7 +119,6 @@ public class Problem1 extends Robot
             System.out.println(beeperList[5]);
             System.out.println(beeperList[6]);
             System.out.println(beeperList[7]);
-            System.out.println(666);
     }
     
     public boolean listSorted(){
@@ -149,13 +149,27 @@ public class Problem1 extends Robot
     
     public void moveToPutBeeper(){
         faceWest();
-        while(frontIsClear()){
-            move();
-        }
+        move();
     }
     
     public void putDownRow() {
-        
+        faceNorth();
+        while(beeperList[rowNumber - 1] > 0){
+            putBeeper();
+            move();
+            beeperList[rowNumber - 1] -= 1;
+        }
+    }
+    
+    public void moveToNextRow2(){
+        faceSouth();
+        while(frontIsClear()){
+            move();
+        }
+        faceWest();
+        if(frontIsClear()){
+            move();
+        }
     }
    
 }
