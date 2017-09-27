@@ -8,6 +8,7 @@ public class RobotDriver implements Directions
     public static void main(String args[])  {
         Harvester billy = new Harvester(2,2,East,0);
         billy.harvest();
+        billy.printField();
         billy.turnOff();
     } 
 
@@ -17,7 +18,7 @@ public class RobotDriver implements Directions
         World.setBeeperColor(Color.magenta);
         World.setStreetColor(Color.blue);
         World.setNeutroniumColor(Color.green.darker());
-        World.setDelay(10);  
+        World.setDelay(15);  
         World.setVisible(true);
     }
 }

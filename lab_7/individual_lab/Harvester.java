@@ -28,7 +28,15 @@ public class Harvester extends Robot
     }
     
     public void printField() {
-       System.out.println(field);//Write instructions so that the field is printed to the console after harvesting
+       rowNumber = 5;
+       columnNumber = 0;
+       while(rowNumber > -1){
+           for(int i = 0; i < 5; i++){
+               System.out.print(field[rowNumber][i]);
+           }
+           rowNumber--;
+           System.out.println();
+       } 
     }
     
     public void faceNorth(){
