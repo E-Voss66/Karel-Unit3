@@ -1,6 +1,18 @@
 #BlueJ class context
-comment0.params=
-comment0.target=void\ fixQuad()
+comment0.target=Quad
+comment0.text=\r\n\ @author\ \:\ \ D.\ Appel\r\n
 comment1.params=
-comment1.target=void\ printFixes()
-numComments=2
+comment1.target=void\ fixQuad()
+comment2.params=
+comment2.target=void\ printFixes()
+comment3.params=
+comment3.target=void\ faceNorth()
+comment4.params=
+comment4.target=void\ faceSouth()
+comment5.params=
+comment5.target=void\ faceEast()
+comment6.params=
+comment6.target=void\ findColumn()
+comment7.params=
+comment7.target=void\ repairColumn()
+numComments=8
